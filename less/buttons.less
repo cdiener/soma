@@ -1,45 +1,58 @@
 .btn {
-    font-size: 1.5em;
-	background: @grayish;
+    font-size: 1.25em;
+	background: darken(@grayish, 5%);
 	border: 0;
 	color: #fff;
 	cursor: pointer;
+    //border-radius: 10px;
 	display: inline-block; /* Enables non-inline-block elements like <div>s to be buttons */
 	margin: 10px 3px;
 	padding: 12px 30px 14px;
     box-shadow: 0 2px 3px @shadow;
     
-    &:hover { 
-        background: darken(@grayish, 5%); 
-        box-shadow: 0 5px 8px lighten(@shadow, 20%);
+    &:hover, &:active { 
+        background: @grayish; 
+        box-shadow: 0 5px 8px lighten(@shadow, 10%);
         border: 0;
     }
+}
+
+.badge {
+    font-size: 2em;
+    text-align: center;
+	background: @grayish;
+	border-radius: 1.5em+10px;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block; /* Enables non-inline-block elements like <div>s to be buttons */
+	margin: 5px;
+    padding: 0.1em;
+    width: 1.4em;
+    box-shadow: 0 2px 3px @shadow;
     
-    &:active, &:focus {  background: darken(@grayish, 10%); }
+    &:hover, &:active { 
+        background: darken(@grayish, 5%); 
+        box-shadow: 0 5px 8px lighten(@shadow, 10%);
+        border: 0;
+    }
 }
 
 .btn-blue {
-	background: @blueish;
+	background:darken(@blueish, 5%);
 	
-    &:hover { background: darken(@blueish, 5%); }
-
-	&:active, &:focus {  background: saturate(@blueish, 20%); }
+    &:hover, &:active { background:  @blueish; }
 }
 
 .btn-red {
-	background: @reddish;
+	background: darken(@reddish, 5%);
 	
-    &:hover { background: darken(@reddish, 5%); }
-
-	&:active, &:focus {  background: saturate(@reddish, 20%); }
+    &:hover { background: @reddish; }
 }
 
 .btn-green {
-	background: @greenish;
+	background: darken(@greenish, 5%);
 	
-    &:hover { background: darken(@greenish, 5%); }
-
-	&:active, &:focus {  background: saturate(@greenish, 20%); }
+    &:hover, &:active { background: @greenish; }
 }
 
 .btn-sm {
