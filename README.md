@@ -19,7 +19,7 @@ Minified and gzipped soma.css is less than 1.6kB making it a fast loading altern
 Soma includes the following components:
 
 component       |  size (min+gzip) 
-----------------------------------
+----------------|-----------------
 general styles  |
 responsive grid |
 navbar          |
@@ -28,7 +28,6 @@ code blocks     |
 headings        |
 tables          |
 timeline        |
------------------------------------
 
 Of course, you can customize which components you really want. In the less and scss directories there is an 
 "all" file which allows you to only include the components you need.
