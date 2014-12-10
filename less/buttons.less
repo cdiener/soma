@@ -1,0 +1,48 @@
+.btn {
+    font-size: 1.5em;
+	background: @grayish;
+	border: 0;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block; /* Enables non-inline-block elements like <div>s to be buttons */
+	margin: 10px 3px;
+	padding: 12px 30px 14px;
+    box-shadow: 0 2px 3px @shadow;
+    
+    &:hover { 
+        background: darken(@grayish, 5%); 
+        box-shadow: 0 5px 8px lighten(@shadow, 20%);
+        border: 0;
+    }
+    
+    &:active, &:focus {  background: darken(@grayish, 10%); }
+}
+
+.btn-blue {
+	background: @blueish;
+	
+    &:hover { background: darken(@blueish, 5%); }
+
+	&:active, &:focus {  background: saturate(@blueish, 20%); }
+}
+
+.btn-red {
+	background: @reddish;
+	
+    &:hover { background: darken(@reddish, 5%); }
+
+	&:active, &:focus {  background: saturate(@reddish, 20%); }
+}
+
+.btn-green {
+	background: @greenish;
+	
+    &:hover { background: darken(@greenish, 5%); }
+
+	&:active, &:focus {  background: saturate(@greenish, 20%); }
+}
+
+.btn-sm {
+    font-size: 14px;
+	padding: 10px 14px 11px;
+}

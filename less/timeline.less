@@ -1,0 +1,88 @@
+@linebg: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAADCAYAAABbNsX4AAAAIElEQVQIW2NkgILL8fH/dRcuZARxwQRMAEYzIquAKQAACAESlKmYEHMAAAAASUVORK5CYII=);
+
+ol.timeline {
+  list-style-type: none;
+  position: relative;
+  padding: 10px 0;
+  width: 75%;
+  
+  &:before {
+	  content: '';
+	  position: absolute;
+	  top: 0;
+	  left: 60px;
+	  width: 5px;
+	  background: @linebg repeat-y;
+	  height: 100%;
+	  z-index: -1;
+	}
+}
+
+.timeline li {
+  padding: 0.25em 0;
+}
+
+.time {
+  position: absolute;
+  width: 50px;
+  margin: 10px 0;
+  text-align: center;
+  font-size: 12px;
+}
+
+.dot {
+  position: absolute;
+  margin: 13px 0;
+  left: 57.5px;
+  padding: 5px;
+  border-radius: 5px;
+  
+  &:before {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 1px;
+	z-index: -1;
+	background: @grayish;
+  }
+  
+  &:after {
+	content: '';
+	position: absolute;
+	left: 14px;
+	bottom: -3.5px;
+	border: 8px solid transparent;
+	border-right: 8px solid blue;
+	z-index: 1;
+  }
+}
+
+.text {
+  position: relative;
+  display: inline-block;
+  left: 80px;
+  border-left: 4px solid blue;
+  border-radius: 0 3px 3px 0;
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 14px;
+  
+  &:hover {
+	box-shadow: 0 5px 8px lighten(@shadow, 20%);
+	border-width: 5px;
+  }
+}
+
+li:nth-child(even) {
+  .dot { background: @greenish; }
+  .dot:after { border-right-color: @greenish; }
+  .text { border-color: @greenish; background: lighten(@greenish, 50%); }
+  .time { color: @greenish; } 
+}
+
+li:nth-child(odd) {
+  .dot { background: @blueish; }
+  .dot:after { border-right-color: @blueish; }
+  .text { border-color: @blueish; background: @blueish+@grayish; }
+  .time { color: @blueish; } 
+}
