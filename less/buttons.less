@@ -15,47 +15,33 @@
         box-shadow: 0 5px 8px lighten(@shadow, 10%);
         border: 0;
     }
-}
+    
+	&.blue {
+		background:darken(@blueish, 5%);
+		&:hover, &:active { background:  @blueish; } 
+	}
+	
+	&.red {
+		background: darken(@reddish, 5%);
+		&:hover { background: @reddish; }
+	}
 
-.badge {
+	&.green {
+		background: darken(@greenish, 5%);
+		&:hover, &:active { background: @greenish; }
+	}
+
+	&.sm {
+		font-size: 14px;
+		padding: 10px 14px 11px;
+	}
+	
+	&.badge {
     font-size: 2em;
     text-align: center;
-	background: @grayish;
 	border-radius: 1.5em+10px;
-	color: #fff;
-	cursor: pointer;
-	display: inline-block; /* Enables non-inline-block elements like <div>s to be buttons */
 	margin: 5px;
     padding: 0.1em;
     width: 1.4em;
-    box-shadow: 0 2px 3px @shadow;
-    
-    &:hover, &:active { 
-        background: darken(@grayish, 5%); 
-        box-shadow: 0 5px 8px lighten(@shadow, 10%);
-        border: 0;
-    }
-}
-
-.btn-blue {
-	background:darken(@blueish, 5%);
-	
-    &:hover, &:active { background:  @blueish; }
-}
-
-.btn-red {
-	background: darken(@reddish, 5%);
-	
-    &:hover { background: @reddish; }
-}
-
-.btn-green {
-	background: darken(@greenish, 5%);
-	
-    &:hover, &:active { background: @greenish; }
-}
-
-.btn-sm {
-    font-size: 14px;
-	padding: 10px 14px 11px;
+	}
 }
