@@ -1,17 +1,16 @@
 .nav {
 	height: 24px;
 	padding: 11px 0 15px;
-	/* TODO: migrate to ems (currently we don't use them because of iOS compatibility problems (has to do with unicode icon for close)) */
-	/* Uncomment for animations
-	max-height: 1.5em;
-	*/
-    box-shadow: 0px 2px 3px @grayish;
+    box-shadow: 0px 2px 3px @shadow;
+    position: relative;
+    z-index: 1;
 }
 
 .nav a {
-	padding: 0.3em 1.5em; 
+	padding: 0.3ex 1.5em; 
 	position: relative;
-	top: -1px;
+	top: -0.2ex;
+	margin-bottom: 0.2em;
     color: black;
     border-bottom: 3px solid transparent;
     
@@ -22,12 +21,12 @@
 
 .nav .pagename {
 	font-size: 22px;
-    top: 1px;
+    top: 0.2ex;
     
     &:hover { color: @blueish; border-bottom: none;}
 }
 
-.btn-close {
+.close {
     border: 0;
     cursor: pointer;
     background: #fff;
@@ -39,7 +38,7 @@
 }
 
 @media (max-width:500px) {
-	.btn-close {
+	.close {
 		display: block;
 	}
 	.nav {
@@ -48,7 +47,7 @@
 	.pagename {
 		margin-top: -11px;
 	}
-	.nav:active,.nav:focus {
+	.nav:active,.nav:focus, .nav.show {
 		height: auto;
 	}
 	.nav div:before {
@@ -59,9 +58,8 @@
 		float: right;
 		height: 4px;
 		position: relative;
-		right: 3px;
 		top: 16px;
-		width: 20px;
+		width: 22px;
 	}
 	.nav a {
 		display: block;

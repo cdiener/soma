@@ -6,19 +6,42 @@
 	<title>CSS test</title>
 	<meta name="description" content="nothing :)">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link href='//fonts.googleapis.com/css?family=Open+Sans|Inconsolata' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans|Inconsolata' rel='stylesheet' type='text/css'-->
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<link type="text/css" rel="stylesheet" href="soma.css"/>
+	<style type="text/css">
+	.hero {
+		width: 100%;
+		padding: 20px 0;
+		text-align: center;
+		font-size: 28px;
+		color: #fff;
+		background: url('bg.svg') repeat-y;
+		background-size: cover;
+		
+	}
+	
+	.hero > h1 {
+		font: 50px Inconsolata, monospace;
+	}
+	
+	.hero > a {
+		color: #fff;
+		border-color: rgba(200,200,200,0.7);
+	}
+	</style>
 </head>
 	<body>
-		<div class="nav" tabindex="-1" onclick="this.focus()">
+		<div class="nav" id="topnav" tabindex="-1" onclick="this.focus()">
             <div class="container">
-            <a href="#" class="pagename">Pagename</a>
+            <a href="#" class="pagename">soma.css</a>
             <a href="#" class="current smooth">Main</a>
             <a href="#" class="smooth">Docs</a>
             </div>
         </div>
-        <button class="btn-close sm">×</button>
+        <div class="close" onclick="this.focus()">×</div>
+       
+       <div class="hero"><h1>soma.css</h1>A small opiniated Material Design CSS framework based on <a href="http://mincss.com">min.css</a><br><br></div>
        
         <div class="container">
         <div class="row">
@@ -56,6 +79,8 @@
             <li><div class="time">05/2013<br>to<br>01/2014</div><span class="dot"></span>
             <p class="text smooth"><b>Heading 2</b><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utali</p></li>
             </ol>
+            <a class="btn badge smooth" style="background: #55acee"><i class="fa fa-twitter"></i></a>
+		   <a class="btn badge blue smooth"><i class="fa fa-github"></i></a>
         </div>
         <div class="col c6">
             <h1>Text</h1>
@@ -87,5 +112,22 @@ hello()</pre>
         
         </div>
         </div>
+        
+        <!--script type="text/javascript">
+			var expanded = false;
+			var nav = document.getElementById("topnav");
+			
+			function toggle()
+			{
+				if(expanded)
+				{ 
+					nav.className = "nav";
+					nav.blur();
+				}
+				else nav.className = "nav show";
+				
+				expanded = !expanded; 
+			}
+		</script-->
 	</body>
 </html>
