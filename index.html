@@ -111,20 +111,7 @@ hello()</pre>
         </div>
         
         <script type="text/javascript">
-			var expanded = false;
-			var nav = document.getElementById("topnav");
-			
-			function toggle()
-			{
-				if(expanded)
-				{ 
-					nav.className = "nav";
-					nav.blur();
-				}
-				else nav.className = "nav show";
-				
-				expanded = !expanded; 
-			}
+			var a=!1,b=document.getElementById("topnav");toggle=function(){a?(b.className="nav",b.blur()):b.className="nav show";a=!a};
 		</script>
 	</body>
 </html>
