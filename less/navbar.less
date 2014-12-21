@@ -9,7 +9,7 @@
 .nav a {
 	padding: 0.3ex 1.5em; 
 	position: relative;
-	top: -0.15ex;
+	top: -0.1ex;
 	margin-bottom: 0.2em;
     color: black;
     border-bottom: 3px solid transparent;
@@ -26,19 +26,6 @@
     &:hover { color: @blueish; border-bottom: none;}
 }
 
-.close {
-    border: 0;
-    cursor: pointer;
-    background: #fff;;
-	float: right;
-	font-size: 25px;
-    padding: 12px 20px 14px;
-	margin: -54px 7px;
-	display: none;
-	position: absolute;
-	
-}
-
 @media (max-width:500px) {
 	.close {
 		display: block;
@@ -49,7 +36,7 @@
 	.pagename {
 		margin-top: -11px;
 	}
-	.nav:active,.nav:focus {
+	.nav:active, .nav:focus, .nav.show {
 		height: auto;
 	}
 	.nav div:before {
