@@ -18,29 +18,26 @@
 		color: #fff;
 		background: url('bg.svg') repeat-y;
 		background-size: cover;
-		
+		position: relative;
+		z-index: -1;
 	}
 	
 	.hero > h1 {
 		font: 50px Inconsolata, monospace;
 	}
-	
-	.hero > a {
-		color: #fff;
-		border-color: rgba(200,200,200,0.7);
-	}
 	</style>
 </head>
 	<body>
-		<div class="nav" id="topnav" tabindex="-1" onclick="toggle()">
+		<div class="nav" id="topnav" tabindex="-1" onclick="this.focus()">
             <div class="container">
             <a href="#" class="pagename">soma.css</a>
             <a href="#" class="current smooth">Main</a>
             <a href="#" class="smooth">Docs</a>
             </div>
         </div>
+        <button class="btn-close">×</button>
        
-       <div class="hero"><h1>soma.css</h1>A small opiniated Material Design CSS framework based on <a href="http://mincss.com">min.css</a><br><br></div>
+       <div class="hero"><h1>soma.css</h1>A small opiniated Material Design CSS framework based on <i>min.css</i></a><br><br></div>
        
         <div class="container">
         <div class="row">
@@ -57,16 +54,16 @@
             <a href="#" class="btn red sm smooth">Button red</a>
             
             <h2>Badges</h2>
-            <a href="#" class="btn badge blue smooth"><i class="fa fa-github"></i></a>
-            <a href="#" class="btn badge red smooth"><i class="fa fa-google-plus"></i></a>
-            <a href="#" class="btn badge green smooth"><i class="fa fa-spotify"></i></a>
-            <a href="#" class="btn badge smooth"><i class="fa fa-codepen"></i></a>
-            <a href="#" class="btn badge blue smooth"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="btn badge blue smooth"><i class="icon i-reddit"></i></a>
+            <a href="#" class="btn badge red smooth"><i class="icon i-google-plus"></i></a>
+            <a href="#" class="btn badge green smooth"><i class="icon i-facebook"></i></a>
+            <a href="#" class="btn badge smooth"><i class="icon i-mail"></i></a>
+            <a href="#" class="btn badge blue smooth"><i class="icon i-twitter"></i></a>
             
             <h2>Forms</h2>
             <input type="text" class="smooth" placeholder="input type=&quot;text&quot;"><br><br>
             <textarea rows="3" class="smooth" placeholder="textarea"></textarea><br><br>
-            <span class="addon"><i class="fa fa-pie-chart"></i></i></span><input type="text" class="smooth" 
+            <span class="addon"><i class="icon i-mail"></i></span><input type="text" class="smooth" 
                 placeholder="span class=&quot;addon&quot;"><br><br>
             <input type="submit" class="btn green sm">
             
@@ -110,8 +107,8 @@ hello()</pre>
         </div>
         </div>
         
-        <script type="text/javascript">
+        <!--script type="text/javascript">
 			var a=!1,b=document.getElementById("topnav");toggle=function(){a?(b.className="nav",b.blur()):b.className="nav show";a=!a};
-		</script>
+		</script-->
 	</body>
 </html>
