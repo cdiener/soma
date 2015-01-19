@@ -1,0 +1,53 @@
+.card {
+	border-left: 5px solid @grayish;
+	border-radius: 0.25em;
+	padding: 1em;
+	margin: 10px;
+	box-shadow: 1px 2px 3px 1px @shadow;
+	
+	& > h1 { 
+		font-size: 1.2em;
+		font-weight: bold;
+		margin: 0;
+	}
+	
+	& > h2 {
+		font-size: 1em;
+		color: @grayish;
+		margin: 0;
+	}
+	
+	& > h3 {
+		font-size: 0.8em;
+		color: @blueish;
+		margin: 0;
+	}
+	
+	&.neutral {
+		background: @blueish + @grayish;
+		border-color: @blueish;
+	}
+
+	&.pos { 
+		background: lighten(@greenish, 50%);
+		border-color: @greenish;
+		
+		& > h3 {
+			color: @greenish;
+		}
+	}
+
+	&.neg { 
+		background: lighten(@reddish, 50%);
+		border-color: @reddish;
+		
+		& > h3 {
+			color: @reddish;
+		}
+	}
+	
+	& > .items {
+		float: right;
+		font-size: 1.2em;
+	}
+}

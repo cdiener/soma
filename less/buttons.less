@@ -1,5 +1,6 @@
 .btn {
     font-size: 1.25em;
+    text-decoration: none;
 	background: darken(@grayish, 5%);
 	border: 0;
 	color: #fff;
@@ -37,7 +38,7 @@
 	}
 	
 	&.badge {
-    font: 2.3em monospace;
+    font: 2.2em monospace;
     text-align: center;
 	border-radius: 1.8em;
 	margin: 5px;
@@ -45,4 +46,10 @@
     width: 1.1em;
     & > i, span { display: block; }
 	}
+	
+	&.badge.sm { 
+		font-size: 1em; 
+		margin: 0;
+	}
 }
+
