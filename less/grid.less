@@ -1,4 +1,5 @@
 /* Grid system responsive code is in general.less */
+@colspace: 2%;
 
 .row {
 	margin: 1% 0;
@@ -7,59 +8,60 @@
 
 .col {
 	float: left;
+	margin: 0 @colspace/2;
 }
 
 .table, .c12 {
-	width: 100%;
+	width: 100%-@colspace;
 }
 
 .c11 {
-	width: 91.66%;
+	width: 91.66%-@colspace;
 }
 
 .c10 {
-	width: 83.33%;
+	width: 83.33%-@colspace;
 }
 
 .c9 {
-	width: 75%;
+	width: 75%-@colspace;
 }
 
 .c8 {
-	width: 66.66%;
+	width: 66.66%-@colspace;
 }
 
 .c7 {
-	width: 58.33%;
+	width: 58.33%-@colspace;
 }
 
 .c6 {
-	width: 50%;
+	width: 50%-@colspace;
 }
 
 .c5 {
-	width: 41.66%
+	width: 41.66%-@colspace;
 }
 
 .c4 {
-	width: 33.33%;
+	width: 33.33%-@colspace;
 }
 
 .c3 {
-	width: 25%;
+	width: 25%-@colspace;
 }
 
 .c2 {
-	width: 16.66%;
+	width: 16.66%-@colspace;
 }
 
 .c1 {
-	width: 8.33%;
+	width: 8.33%-@colspace;
 }
 
 /* For smaller screens, change all columns to 100% width */
 @media (max-width:870px) {
 	.row .col {
-		width: 100%;
+		width: 100%-@colspace;
 	}
 }

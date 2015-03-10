@@ -27,13 +27,14 @@
 		<div class="container">
 		<div class="row">
 		<h1>Automatic styles</h1>
-		<p>Soma applies some styles by default. This includes styling for links and fonts. 
-			Most of the styles in soma make use of four basic colors: gray, blue, green, red,
-			which can be chnaged by modifying <code>colors.less</code>.<br>
-			By default Soma uses the systems sans-serif font, but you can easily use whatever
-			font you like by including the following style in your head. For instance using
-			<a class=smooth target=_blank href=http://google.com/fonts>Google Fonts</a> 
-			you would use the following:</p>
+		<p>Soma applies some styles by default. This includes styling for links 
+		and fonts. Most of the styles in soma make use of four basic colors: 
+		gray, blue, green, red, which can be chnaged by modifying 
+		<code>colors.less</code>.<br> By default Soma uses the systems 
+		sans-serif font, but you can easily use whatever font you like by 
+		including the following style in your head. For instance using <a 
+		class=smooth target=_blank href=http://google.com/fonts>Google 
+		Fonts</a> you would use the following:</p>
         <div class="col c6">
         <pre>&lt;head&gt;
 &lt;link rel=stylesheet href=soma.css/&gt;
@@ -76,7 +77,7 @@
         
         <div class="row">
 		<p>There are also badges which you can use for some itemized buttons,
-			for instance by using <a class=smooth target=_blank href=http://fontawesome.io>FontAwesome</a>.</p>
+		for instance by using <a class=smooth target=_blank href=http://fontawesome.io>FontAwesome</a>.</p>
         <div class="col c6">
         <pre>
 &lt;a href="#" class="btn badge blue smooth"&gt;&lt;i class="fa fa-reddit"&gt;&lt;/i&gt;&lt;/a&gt;
@@ -126,20 +127,129 @@
 		b.className="nav show";a=!a};
 &lt;/script&gt;
 &lt;/body&gt;</pre>
-        </div>
+        </div></div>
         <p>Check out the top of this page for the demo :)</p>
-        </div>
         
         <div class="row">
 		<h1>Grid layout</h1>
-        <div class="col c6">
+		Soma uses the same grid layout as <a class=smooth href=http://mincss.com>
+		min.css</a>. The design principle is mobile-first with a screen divided
+		into rows and 12 columns.
+		<h2>Code</h2>
         <pre>
+&lt;div class="row"&gt;    
+	&lt;div class="col c12"&gt;12&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="row"&gt;
+	&lt;div class="col c4"&gt;4&lt;/div&gt;&lt;div class="col c8"&gt;8&lt;/div&gt;
+&lt;/div&gt;
         </pre>
+        <h2>Examples</h2>
+        <div class="col c12"><p class=card>12</p></div>
+        <div class="col c6"><p class=card>6</p></div>
+        <div class="col c6"><p class=card>6</p></div>
+        <div class="col c1"><p class=card>1</p></div>
+        <div class="col c11"><p class=card>11</p></div>
+        </div>
+        
+        <div class="row">
+        <h1>Cards</h1>
+        <p>Cards give structure to your elements and allow you to separate
+        page elements visually.</p>
+        <div class="col c6">
+		<h2>Code</h2>
+<pre>
+&lt;div class=card&gt;
+&lt;h1&gt;Header&lt;/h1&gt;
+&lt;h2&gt;Subheader&lt;/h2&gt;
+&lt;h3&gt;Colored subheader&lt;/h3&gt;
+&lt;p&gt;And some text...&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="card neutral"&gt;
+&lt;h1&gt;Neutral colored&lt;/h1&gt;
+&lt;h2&gt;Still the same&lt;/h2&gt;
+&lt;h3&gt;Colored subheader&lt;/h3&gt;
+&lt;p&gt;And some neutral statement...&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="card pos"&gt;
+&lt;h1&gt;Positive message&lt;/h1&gt;
+&lt;h3&gt;Good job!&lt;/h3&gt;
+&lt;p&gt;Well done :)&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class="card neg"&gt;
+&lt;h1&gt;Negative message&lt;/h1&gt;
+&lt;h3&gt;Oops something went wrong...&lt;/h3&gt;
+&lt;p&gt;We are gonna fix that soon!&lt;/p&gt;
+&lt;/div&gt;</pre>
         </div>
         <div class="col c6">
+		<h2>Result</h2>
+		<div class=card>
+		<h1>Header</h1>
+		<h2>Subheader</h2>
+		<h3>Colored subheader</h3>
+		<p>And some text...</p>
+		</div>
+		<div class="card neutral">
+		<h1>Neutral colored</h1>
+		<h2>Still the same</h2>
+		<h3>Colored subheader</h3>
+		<p>And some neutral statement...</p>
+		</div>
+		<div class="card pos">
+		<h1>Positive message</h1>
+		<h3>Good job!</h3>
+		<p>Well done :)</p>
+		</div>
+		<div class="card neg">
+		<h1>Negative message</h1>
+		<h3>Oops something went wrong...</h3>
+		<p>We are gonna fix that soon!</p>
+		</div>
+        </div></div>
         
+        <div class="row">
+        <h1>Icons</h1>
+        <p>Soma does not come with a complete icon solution since I feel that 
+        this depends a lot on your project. If you need a lot of icons a public
+        icon font such as FontAwesome might be a good solution. Its size is
+        significant but due to its ubiquitious use there is a good chance your
+        site visitor has it cached. If you only want some particular icons you
+        might want to generate your own icon font with 
+        <a class=smooth href=http://icomoon.io>icomoon</a>. Soma includes
+        a small icon font as optional module. In order to use it add icons.less
+        to all.less and include the font folder in your project.</p>
+        <div class="col c6">
+        <h2>Code</h2>
+        <pre>
+&lt;i class="icon i-linkedin"&gt;&lt;/i&gt;
+&lt;i class="icon i-mail"&gt;&lt;/i&gt;
+&lt;i class="icon i-reddit"&gt;&lt;/i&gt;
+&lt;i class="icon i-credit-card"&gt;&lt;/i&gt;
+&lt;i class="icon i-cross"&gt;&lt;/i&gt;
+&lt;i class="icon i-checkmark"&gt;&lt;/i&gt;
+&lt;i class="icon i-google-plus"&gt;&lt;/i&gt;
+&lt;i class="icon i-facebook"&gt;&lt;/i&gt;
+&lt;i class="icon i-twitter"&gt;&lt;/i&gt;        
+</pre>
         </div>
-        </div>
+        <div class="col c6">
+		<h2>Result</h2>
+        <p style="font-size:3em">
+        <i class="icon i-linkedin"></i>
+		<i class="icon i-mail"></i>
+		<i class="icon i-reddit"></i>
+		<i class="icon i-credit-card"></i>
+		<i class="icon i-cross"></i>
+		<i class="icon i-checkmark"></i>
+		<i class="icon i-google-plus"></i>
+		<i class="icon i-facebook"></i>
+		<i class="icon i-twitter"></i>
+        </p>
+        </div></div>
         
         </div>
         
