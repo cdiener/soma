@@ -29,16 +29,21 @@ To be exact `stat -c%s soma.css.gz` currently clocks in at 1587 bytes.
 
 Soma includes the following components:
 
-component       |  size (min+gzip) 
-----------------|-----------------
-general styles  | 291
-responsive grid | 194
-navbar          | 422
-buttons         | 347
-code blocks     | 126
-headings        | 102
-tables          | 119
-timeline        | 626
+module		| size (min + gzip) 
+----------------|-------------------
+all.less	| 1688 
+buttons.less	| 364 
+cards.less	| 249 
+code.less	| 136 
+colors.less	| 31 
+forms.less	| 252 
+general.less	| 242 
+grid.less	| 192 
+headings.less	| 110 
+icons.less	| 348 
+navbar.less	| 442 
+tables.less	| 114 
+timeline.less	| 626
 
 The byte values add up to something slightly larger than the entire framework because the individual
 components always need to include the color definitions contained in `colors.less`.
