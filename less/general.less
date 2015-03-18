@@ -29,3 +29,13 @@ a {
     &:hover { border-bottom: 2px solid @reddish; }
 }
 
+ul {
+	list-style: none;
+}
+
+
+ul > li:before {
+	padding-right: 6px;
+    content: "▰";
+    color: @blueish;
+}
