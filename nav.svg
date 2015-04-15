@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:osb="http://www.openswatchbook.org/uri/2009/osb" height="110" width="400" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 399.99999 110" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs>
+  <linearGradient id="b" osb:paint="solid">
+   <stop stop-color="#0d6" offset="0"/>
+  </linearGradient>
+  <linearGradient id="c" osb:paint="solid">
+   <stop stop-color="#d05" offset="0"/>
+  </linearGradient>
+  <linearGradient id="a" osb:paint="solid">
+   <stop stop-color="#45b" offset="0"/>
+  </linearGradient>
+  <linearGradient id="f" y2="314.54" xlink:href="#a" gradientUnits="userSpaceOnUse" x2="267.62" y1="314.54" x1="150.21"/>
+  <linearGradient id="e" y2="314.85" xlink:href="#c" gradientUnits="userSpaceOnUse" x2="439.55" y1="314.85" x1="309.9"/>
+  <linearGradient id="d" y2="311.79" xlink:href="#b" gradientUnits="userSpaceOnUse" x2="659.2" y1="311.79" x1="481.21"/>
+ </defs>
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g stroke-linejoin="round" stroke-linecap="round" transform="translate(-115 -102.36)">
+  <g fill-rule="evenodd">
+   <path d="m245 107.36v50h50z" stroke="url(#c)" fill="url(#c)"/>
+   <path d="m245 107.36v50h-50z" stroke="url(#a)" fill="url(#a)"/>
+   <path d="m245 207.36v-50h-50z" stroke="url(#c)" fill="url(#c)"/>
+   <path d="m245 207.36v-50h50z" stroke="url(#a)" fill="url(#a)"/>
+   <path d="m300 207.36v-50h50z" stroke="url(#b)" fill="url(#b)"/>
+   <path d="m400 207.36v-50h-50z" stroke="url(#a)" fill="url(#a)"/>
+   <path d="m300 107.36v50h50z" stroke="url(#a)" fill="url(#a)"/>
+   <path d="m400 107.36v50h-50z" stroke="url(#b)" fill="url(#b)"/>
+   <path d="m405 207.36v-50h50z" stroke="url(#a)" fill="url(#a)"/>
+   <path d="m505 207.36v-50h-50z" stroke="url(#c)" fill="url(#c)"/>
+   <path d="m455 107.36v50h-50z" stroke="url(#c)" fill="url(#c)"/>
+   <path d="m455 107.36v50h50z" stroke="url(#a)" fill="url(#a)"/>
+   <path d="m175 157.36v50h-50z" stroke="url(#b)" fill="url(#b)"/>
+   <path d="m175 157.36v-50h50z" stroke="url(#b)" fill="url(#b)"/>
+   <path d="m175 157.36-25-25 25-25z" stroke="url(#a)" fill="url(#a)"/>
+   <path d="m175 207.36 25-25-25-25z" stroke="url(#a)" fill="url(#a)"/>
+  </g>
+  <g transform="translate(109.52 -165.81)" stroke="#000" fill="#fff">
+   <g fill-rule="evenodd">
+    <path d="m565 207.36v-50h-50z"/>
+    <path d="m565 157.36v50h50z"/>
+    <path d="m565 107.36v50h-50z"/>
+    <path d="m565 157.36v-50h50z"/>
+   </g>
+   <rect height="10" width="10" y="197.36" x="515"/>
+   <g fill-rule="evenodd">
+    <path d="m670 157.36v50h-50z"/>
+    <path d="m670 157.36v-50h50z"/>
+    <path d="m670 157.36-25-25 25-25z"/>
+    <path d="m670 207.36 25-25-25-25z"/>
+    <path d="m740 157.36v50h-50z"/>
+    <path d="m740 157.36v-50h50z"/>
+    <path d="m740 157.36-25-25 25-25z"/>
+    <path d="m740 207.36 25-25-25-25z"/>
+   </g>
+  </g>
+  <g stroke="#fff" stroke-width="3">
+   <rect height="64.855" width="114.41" y="282.11" x="151.71" fill="url(#f)"/>
+   <rect height="76.48" width="126.65" y="276.61" x="311.4" fill="url(#e)"/>
+   <rect height="71.585" width="174.99" y="275.99" x="482.71" fill="url(#d)"/>
+  </g>
+ </g>
+</svg>
