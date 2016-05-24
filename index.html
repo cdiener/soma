@@ -11,8 +11,8 @@
 	<link type="text/css" rel="stylesheet" href="soma.css"/>
 	<style type="text/css">
 	.hero {
-		width: 100%;
-		padding: 20px 0;
+		width: auto;
+		padding: 20px;
 		text-align: center;
 		font-size: 28px;
 		color: #fff;
@@ -21,11 +21,11 @@
 		position: relative;
 		z-index: -1;
 	}
-	
+
 	.hero > h1 {
 		font: 50px Inconsolata, monospace;
 	}
-	
+
 	</style>
 </head>
 	<body>
@@ -36,17 +36,17 @@
             <a href="docs.html"><i class="fa fa-book fa-fw"></i>&nbsp;&nbsp;Docs</a>
             </div>
         </div>
-       
+
        <div class="hero"><br><img src=logo.svg height=50><br><br>A small opiniated Material Design CSS framework based on <i>min.css</i></a><br><br></div>
-       
+
         <div class="container">
 		<div class="row">
 		<div class="col c6">
 		<h2>What is it?</h2>
-		<p>Soma is a small (&lt;2 kB minified and gzipped) CSS framework 
+		<p>Soma is a small (&lt;2 kB minified and gzipped) CSS framework
 		built in a modular fashion and obeying partially to the material design
-		philosophy (particularly the paper metaphor). It was derived from 
-		<a href=http://mincss.com class=smooth>min.css</a> and adds some 
+		philosophy (particularly the paper metaphor). It was derived from
+		<a href=http://mincss.com class=smooth>min.css</a> and adds some
 		functionality on top of it.</p>
 		</div>
 		<div class="col c6">
@@ -59,7 +59,7 @@
 		including or deleting a line in the all.less file in order to include or
 		exclude a soma module.</p>
 		</div></div>
-		
+
         <div class="row">
         <h1 class=underline>Demo</h1>
         <div class="col c6">
@@ -68,26 +68,26 @@
             <a href="#" class="btn blue">Button blue</a>
             <a href="#" class="btn green">Button green</a>
             <a href="#" class="btn red">Button red</a>
-            
+
             <h3>Small</h3>
             <a href="#" class="btn blue sm">Button blue</a>
             <a href="#" class="btn green sm">Button green</a>
             <a href="#" class="btn red sm">Button red</a>
-            
+
             <h3>Badges</h3>
             <a href="#" class="btn badge blue"><i class="fa fa-reddit"></i></a>
             <a href="#" class="btn badge red"><i class="fa fa-google-plus"></i></a>
             <a href="#" class="btn badge green"><i class="fa fa-facebook"></i></a>
             <a href="#" class="btn badge"><i class="fa fa-envelope"></i></a>
             <a href="#" class="btn badge blue"><i class="fa fa-twitter"></i></a>
-            
+
             <h2>Forms</h2>
             <input type="text" class="smooth" placeholder="input type=&quot;text&quot;"><br><br>
             <textarea rows="3" class="smooth" placeholder="textarea"></textarea><br><br>
-            <span class="addon">@</span><input type="text" class="smooth" 
+            <span class="addon">@</span><input type="text" class="smooth"
                 placeholder="span class=&quot;addon&quot;"><br><br>
             <input type="submit" class="btn green sm">
-            
+
             <h2>Timeline</h2>
             <ol class="timeline">
             <li><div class="time">2014</div><span class="dot"></span>
@@ -105,7 +105,7 @@
             <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utaliItem 2</li>
             <li>Item 3</li>
             </ul>
-            
+
             <h2>Table</h2>
             <table class="table">
             <thead>
@@ -118,13 +118,12 @@
             </tbody>
             </table>
             <h2>Code</h2>
-            <pre>
-#!/usr/bin/env python
+            <code>#!/usr/bin/env python
 
 def hello():
     print('This is some code!')
-    
-hello()</pre>
+
+hello()</code>
         <h2>Cards</h2>
         <div class="card">
 			<div class="items"><div class="btn badge sm blue"><i class="fa fa-facebook"></i></div>
@@ -134,17 +133,17 @@ hello()</pre>
 			<h3>09/2014 - 12/2015</h3>
 			<p class="serif">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi utali</p>
         </div>
-        
+
         <p class="card neutral">This is some neutral message<br>Ain't it?</p>
         <p class="card pos">This is some positive message<br>Ain't it?</p>
         <div class="card neg"><h1>Type error</h1><h3>Value too small!</h3>
         <p>Try to increase the value...</p></div>
-        
+
         </div>
-        
+
         </div>
         </div>
-        
+
         <script type="text/javascript">
 			var a=!1,b=document.getElementById("topnav");toggle=function(){a?(b.className="nav",b.blur()):b.className="nav show";a=!a};
 		</script>

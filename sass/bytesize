@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+echo "File		| size (min + gzip) "
+echo "----------------|-------------------"
+	for f in *.scss
+	do
+		name=${f%.less}
+		echo "@import 'colors'; @import '$name';" | sassc -st compressed $name.css
+		gzip -k $name.css
+		echo "$f	| $(wc -c $name.css.gz | cut -f1 -d ' ') "
+		rm $name.css*
+	done

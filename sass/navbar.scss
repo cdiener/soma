@@ -1,0 +1,70 @@
+.nav {
+	height: 24px;
+	padding: 11px 0 15px;
+	box-shadow: 0px 2px 3px $shadow;
+	outline: 0;
+}
+
+.nav a {
+	padding: 0.5ex 1.5em;
+	position: relative;
+	top: -0.1ex;
+	margin-bottom: 3px;
+	color: black;
+	border-bottom: 3px solid transparent;
+
+	&:hover { border-color: $blueish; }
+
+    &.current { border-color: $reddish; }
+}
+
+.nav .pagename {
+	font-size: 22px;
+    top: 0.2ex;
+    border-bottom: 0;
+}
+
+.close {
+    border: 0;
+    cursor: pointer;
+    background: #fff;
+	float: right;
+	font-size: 25px;
+    padding: 12px 24px 12px;
+	margin: -56px -14px;
+	display: none;
+}
+
+@media (max-width:500px) {
+	.nav {
+		overflow: hidden;
+	}
+
+	.close {
+		display: block;
+	}
+
+	.pagename {
+		margin: -11px;
+	}
+	.nav:active, .nav:focus, .nav.show {
+		height: auto;
+	}
+	.nav div:before {
+        background: #fff;
+		border-bottom: 10px double;
+		border-top: 3px solid;
+		content: '';
+		float: right;
+		height: 4px;
+		position: relative;
+		right: 8px;
+		top: 14px;
+		width: 20px;
+	}
+	.nav a {
+		display: block;
+       width: 33%;
+
+	}
+}

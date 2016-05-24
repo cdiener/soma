@@ -11,51 +11,49 @@ As the name suggest soma is opiniated by what I thought would be some nice asset
 framework. I think there is a set of minimal components we can all agree on such as a responsive
 grid system, navbars and maybe buttons. However, I also included some components I found to be
 useful various times such as some basic styling for source code blocks, social badges and formatting
-for time-based data such as CVs. On top of it I tried to find some minimal styling which would be 
-compatible with the Material Design metaphor. 
+for time-based data such as CVs. On top of it I tried to find some minimal styling which would be
+compatible with the Material Design metaphor.
 
 ## How do is use it?
 
 There is still no great documentation concerning usage, however, there is a demo page (index.html) showcasing
-all the features. You can check out the source in order to see how to use the framework until I
-come up with some nice documentation :) 
+all the features. You can check out the source in order to see how to use the framework or see
+the examples in the documentation :)
 
 ## How small is it?
 
 Minified and gzipped soma.css is less than 2kB making it a fast loading alternative to heavier CSS frameworks.
-To be exact `stat -c%s soma.css.gz` currently clocks in at 1787 bytes.
+To be exact `stat -c%s soma.css.gz` currently clocks in at 1750 bytes.
 
 ## What does it include?
 
 Soma includes the following components:
 
-Module		| size (min + gzip) 
+File		| size (min + gzip)
 ----------------|-------------------
-all.less	| 1787 
-buttons.less	| 363 
-cards.less	| 249 
-code.less	| 136 
-colors.less	| 31 
-forms.less	| 253 
-general.less	| 356 
-grid.less	| 189 
-headings.less	| 116 
-icons.less	| 348 
-navbar.less	| 442 
-tables.less	| 114 
-timeline.less	| 622 
+all.scss	| 1750
+buttons.scss	| 360
+cards.scss	| 259
+code.scss	| 169
+colors.scss	| 36
+forms.scss	| 259
+general.scss	| 293
+grid.scss	| 200
+headings.scss	| 122
+navbar.scss	| 444
+tables.scss	| 120
+timeline.scss	| 631
 
 The byte values add up to something slightly larger than the entire framework because the individual
 components always need to include the color definitions contained in `colors.less`.
 
-Of course, you can customize which components you really want. In the less and scss directories there is an 
+Of course, you can customize which components you really want. In the less and sass directories there is an
 "all" file which allows you to only include the components you need. However, you will always need to include
 `colors.less` to prevent compile errors.
 
 ## How to build?
 
 If you want to build your own, the less and scss directories include a small build script wrapping the CSS
-preprocessors. 
+preprocessors.
 In order to build the less version you will need [less](http://lesscss.org/) installed with the [clean css plugin](https://www.npmjs.com/package/less-plugin-clean-css).
-In order to build the scss version you will need [SASS](http://sass-lang.com/) installed.
- 
+In order to build the sass version you will need [`sassc`](https://github.com/sass/sassc) installed.

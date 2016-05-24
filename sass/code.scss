@@ -1,0 +1,11 @@
+code {
+    display: block;
+    white-space: pre;
+    font: 14px Inconsolata, monospace;
+    background-color: $blueish + $grayish;
+    border-left: 3px solid $greenish;
+    padding: 1em;
+    width: auto;
+    margin: 1.5em;
+    overflow: auto;
+}
