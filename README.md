@@ -31,29 +31,29 @@ Soma includes the following components:
 
 File		| size (min + gzip)
 ----------------|-------------------
-all.scss	| 1750
-buttons.scss	| 360
-cards.scss	| 259
-code.scss	| 169
-colors.scss	| 36
-forms.scss	| 259
-general.scss	| 293
-grid.scss	| 200
-headings.scss	| 122
-navbar.scss	| 444
-tables.scss	| 120
-timeline.scss	| 631
+all	| 1750
+buttons	| 360
+cards	| 259
+code	| 169
+colors	| 36
+forms	| 259
+general	| 293
+grid	| 200
+headings	| 122
+navbar	| 444
+tables	| 120
+timeline	| 631
 
 The byte values add up to something slightly larger than the entire framework because the individual
-components always need to include the color definitions contained in `colors.less`.
+components always need to include the color definitions contained in `colors.*`.
 
 Of course, you can customize which components you really want. In the less and sass directories there is an
 "all" file which allows you to only include the components you need. However, you will always need to include
-`colors.less` to prevent compile errors.
+`colors.*` to prevent compile errors.
 
 ## How to build?
 
-If you want to build your own, the less and scss directories include a small build script wrapping the CSS
+If you want to build your own, the less and sass directories include a small build script wrapping the CSS
 preprocessors.
 In order to build the less version you will need [less](http://lesscss.org/) installed with the [clean css plugin](https://www.npmjs.com/package/less-plugin-clean-css).
 In order to build the sass version you will need [`sassc`](https://github.com/sass/sassc) installed.
